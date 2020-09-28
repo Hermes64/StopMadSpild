@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #95e25f;
+    background-color: #8cecef;
 }
 
 h1 {
@@ -58,7 +58,7 @@ h4 {
 }
 
 .topnav a:first-child {
-    background-image: url(/ourlogo/notext.png);
+    background-image: url(/ourlogo/cutewise.png);
     background-size: cover;
     width: 16vw;
     height: 12vw;
@@ -196,7 +196,7 @@ a.fa-facebook:before {
 }
 @media screen and (min-width: 700px) {
     .topnav a:first-child {
-        background-image: url(/ourlogo/notext.png);
+        background-image: url(/ourlogo/cutewise.png);
         background-size: cover;
         position: relative;
         width: 7.2vw;
@@ -221,5 +221,22 @@ a.fa-facebook:before {
         width: 1vw;
         margin-left: 1vw;
         margin-right: 1vw;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        background-color: #ffcd00;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        background-color: #ffcd00;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8d8d8;
     }
 }
