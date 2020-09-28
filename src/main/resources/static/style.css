@@ -38,6 +38,58 @@ h4 {
     background-attachment: fixed;
     background-size: cover;
 }
+#border_header hr {
+    width: 92%;
+    height: 3px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #ffeb00, darkorange);
+    border-style: none;
+}
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+}
+
+.border_header {
+    border: 1px solid #5f5f5f;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.topnav a:first-child {
+    background-image: url(/ourlogo/notext.png);
+    background-size: cover;
+    width: 16vw;
+    height: 12vw;
+    margin: 1vw;
+}
+
+.topnav a:first-child:hover {
+    opacity: 0.7;
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 3;
+}
+
+.topnav a:not(:first-child):hover {
+    text-decoration: underline;
+    color: darkorange;
+    opacity: 0.6;
+}
+
+.topnav .icon {
+    display: none;
+}
 
 #forside_grid {
     flex-wrap: wrap;
@@ -82,4 +134,92 @@ h4 {
     font-size: 20px;
     padding: 20px;
     text-align: center;
+}
+footer {
+    margin-top: 8vw;
+    width: 100%;
+    background-image: linear-gradient(to right, #ffcd00, darkorange);
+    color: white;
+
+}
+
+#footer_info {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    font-size: 14px;
+}
+.kontakt {
+    flex-basis: 100px;
+    margin: 1.5vw;
+}
+
+
+a.fa-facebook {
+    color: white;
+    text-decoration: none;
+    font-size: 5vw;
+    height: 2vw;
+    width: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+a.fa-facebook:before {
+    color: white;
+}
+
+.fa {
+
+    text-align: center;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+.copyright p {
+    flex-basis: 200px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    padding: 2vw;
+
+
+}
+@media screen and (min-width: 700px) {
+    .topnav a:first-child {
+        background-image: url(/ourlogo/notext.png);
+        background-size: cover;
+        position: relative;
+        width: 7.2vw;
+        height: 6vw;
+    }
+
+    .topnav a:not(:first-child) {
+        padding-top: 2vw;
+        float: right;
+        position: relative;
+    }
+
+    .kontakt {
+        flex-basis: 200px;
+    }
+
+    a.fa-facebook
+     {
+        text-decoration: none;
+        font-size: 2vw;
+        height: 1vw;
+        width: 1vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
 }
