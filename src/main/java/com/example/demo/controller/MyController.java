@@ -23,6 +23,12 @@ public class MyController {
         return ("advice2");
     }
 
+    @GetMapping("/reducer_dit_madspild")
+    public String reducer() {
+        return ("reducer_dit_madspild");
+    }
+
+
     }
 
 

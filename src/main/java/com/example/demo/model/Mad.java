@@ -1,16 +1,17 @@
 package com.example.demo.model;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Mad
 {
     private String madNavn;
     private double amount;
-    private LocalDateTime expireDate;
+    private LocalDate expireDate;
 
     public Mad(){}
 
-    public Mad(String madNavn, double amount, LocalDateTime expireDate) {
+    public Mad(String madNavn, double amount, LocalDate expireDate) {
         this.madNavn = madNavn;
         this.amount = amount;
         this.expireDate = expireDate;
@@ -32,11 +33,11 @@ public class Mad
         this.amount = amount;
     }
 
-    public LocalDateTime getExpireDate() {
+    public LocalDate getExpireDate() {
         return expireDate;
     }
 
-    public void setExpireDate(LocalDateTime expireDate) {
+    public void setExpireDate(LocalDate expireDate) {
         this.expireDate = expireDate;
     }
 
