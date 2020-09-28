@@ -18,6 +18,10 @@ public class MyController {
     public String home() {
         return ("home");
     }
+    @GetMapping("/advice2")
+    public String advice2() {
+        return ("advice2");
+    }
 
     }
 
