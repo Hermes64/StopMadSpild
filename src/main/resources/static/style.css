@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #95e25f;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin: 5vw;
+    color: #4c4c4c;
+}
+
+h2 {
+    color: #4c4c4c;
+    font-size: 24px;
+
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+#splash_forside {
+    background-image: url("images/legumes.jpg");
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#forside_grid {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#forside_grid img {
+    width: 35vw;
+    height: 20vw;
+}
+
+.box_wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.pic_container {
+    position: relative;
+    cursor: pointer;
+    margin: 3vw 0 2vw 3vw;
+}
+
+.pic_container img {
+    display: block;
+
+}
+
+.pic_container:hover {
+    transform: scale(1.03);
+    transition: 0.4s ease-in-out;
+}
+
+.pic_text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    /* Black see-through */
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
