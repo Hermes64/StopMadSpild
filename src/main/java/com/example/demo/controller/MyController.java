@@ -32,6 +32,7 @@ public class MyController {
         dataObj.tabelData();
         return ("reducer_dit_madspild");
     }
+
     @GetMapping("/goderåd")
     public String goderåd() {
         return ("goderåd");
