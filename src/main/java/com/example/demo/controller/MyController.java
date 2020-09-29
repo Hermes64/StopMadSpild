@@ -29,10 +29,12 @@ public class MyController {
     @GetMapping("/reducer_dit_madspild")
     public String reducer() {
         DataStorage dataObj = new DataStorage();
-
         dataObj.tabelData();
-
         return ("reducer_dit_madspild");
+    }
+    @GetMapping("/goderåd")
+    public String goderåd() {
+        return ("goderåd");
     }
 
 
