@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.service.DataStorage;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -25,6 +26,10 @@ public class MyController {
 
     @GetMapping("/reducer_dit_madspild")
     public String reducer() {
+        DataStorage dataObj = new DataStorage();
+
+        dataObj.tabelData();
+
         return ("reducer_dit_madspild");
     }
 
