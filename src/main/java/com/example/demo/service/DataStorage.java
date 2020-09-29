@@ -15,6 +15,7 @@ public class DataStorage
 
         tabelListData.add(new Mad("Kød",2, LocalDate.of(2020,11,5)));
         tabelListData.add(new Mad("Pære",3, LocalDate.of(2020,10,3)));
+        tabelListData.add(new Mad("Banan",3, LocalDate.of(2000,11,3)));
         //tabelListData.add(new Mad(madNavn, amount, expiredate));
 
         System.out.println("Data: "+tabelListData);

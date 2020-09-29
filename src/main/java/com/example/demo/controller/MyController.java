@@ -30,12 +30,18 @@ public class MyController {
     }
 
     @GetMapping("/reducer_dit_madspild")
+
     public String reducer(Model model) {
 
         DataStorage dataObj = new DataStorage();
         model.addAttribute("mad",dataObj.tabelData());
 
         return ("reducer_dit_madspild");
+    }
+
+    @GetMapping("/goderåd")
+    public String goderåd() {
+        return ("goderåd");
     }
 
 
