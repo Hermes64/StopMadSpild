@@ -2,7 +2,10 @@ package com.example.demo.controller;
 
 import com.example.demo.service.DataStorage;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import java.time.LocalDate;
 
 @Controller
 public class MyController {
@@ -27,10 +30,10 @@ public class MyController {
     }
 
     @GetMapping("/reducer_dit_madspild")
-    public String reducer() {
-        DataStorage dataObj = new DataStorage();
+    public String reducer(Model model) {
 
-        dataObj.tabelData();
+        DataStorage dataObj = new DataStorage();
+        model.addAttribute("mad",dataObj.tabelData());
 
         return ("reducer_dit_madspild");
     }
