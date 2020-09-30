@@ -7,7 +7,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ccf5b9;
+    background-image: url("/images/greengradient.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 
 h1 {
@@ -80,13 +83,13 @@ h4 {
 }
 
 #forside_grid {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     display: flex;
 }
 
 #forside_grid img {
-    width: 35vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
 }
 
 .box_wrapper {
@@ -126,7 +129,7 @@ h4 {
 footer {
     margin-top: 8vw;
     width: 100%;
-    background-color: #049f90;
+    background-color: #87efe6;
     color: white;
 
 }
