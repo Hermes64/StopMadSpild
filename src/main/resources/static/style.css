@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #8cecef;
+    background-color: #ccf5b9;
 }
 
 h1 {
@@ -37,13 +37,6 @@ h4 {
     margin: 0;
     background-attachment: fixed;
     background-size: cover;
-}
-#border_header hr {
-    width: 92%;
-    height: 3px;
-    margin: 0 auto;
-    background-image: linear-gradient(to right, #ffeb00, darkorange);
-    border-style: none;
 }
 
 .topnav {
@@ -81,11 +74,6 @@ h4 {
     z-index: 3;
 }
 
-.topnav a:not(:first-child):hover {
-    text-decoration: underline;
-    color: darkorange;
-    opacity: 0.6;
-}
 
 .topnav .icon {
     display: none;
@@ -138,7 +126,7 @@ h4 {
 footer {
     margin-top: 8vw;
     width: 100%;
-    background-image: linear-gradient(to right, #ffcd00, darkorange);
+    background-color: #4b0082;
     color: white;
 
 }
@@ -160,68 +148,10 @@ footer a {
     margin: 1.5vw;
 }
 
-
-a.fa-facebook {
-    color: white;
-    text-decoration: none;
-    font-size: 5vw;
-    height: 2vw;
-    width: 2vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
-}
-
-a.fa-facebook:before {
-    color: white;
-}
-
-.fa {
-
-    text-align: center;
-}
-
 .fa:hover {
     opacity: 0.6;
 }
 
-.copyright p {
-    flex-basis: 200px;
-    flex-grow: 1;
-    text-align: center;
-    font-size: 12px;
-    margin: 0;
-    padding: 2vw;
-
-
-}
-@media screen and (min-width: 700px) {
-    .topnav a:first-child {
-        background-image: url(/ourlogo/cutewise.png);
-        background-size: cover;
-        position: relative;
-        width: 7.2vw;
-        height: 6vw;
-    }
-
-    .topnav a:not(:first-child) {
-        padding-top: 2vw;
-        float: right;
-        position: relative;
-    }
-
-    .kontakt {
-        flex-basis: 200px;
-    }
-
-    a.fa-facebook
-     {
-        text-decoration: none;
-        font-size: 2vw;
-        height: 1vw;
-        width: 1vw;
-        margin-left: 1vw;
-        margin-right: 1vw;
-    }
     table {
         font-family: arial, sans-serif;
         border-collapse: collapse;
@@ -236,15 +166,12 @@ a.fa-facebook:before {
         background-color: #ffcd00;
     }
 
-    tr:nth-child(even) {
-        background-color: #f8d8d8;
-    }
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #333;
+        background-color: #333333;
     }
 
     li {
@@ -260,10 +187,9 @@ a.fa-facebook:before {
     }
 
     li a:hover:not(.active) {
-        background-color: #111;
+        background-color: #111111;
     }
 
     .active {
-        background-color: #4CAF50;
+        background-color: #4caf50;
     }
-}
