@@ -1,19 +1,28 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Madspil opgave</title>
+    <title>Flere gode råd</title>
     <link rel="stylesheet" href="style.css">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
+
+
 <header id="myTopnav">
     <div>
         <div class="topnav">
             <a href="/"></a>
-
-
+            <a href="/home">Home</a>
+            <a href="/advices">Good to know</a>
+            <a href="/advice2">Good to know too</a>
+            <a href="/numbers">Some relevants numbers</a>
+            <a href="/omos">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
         <div id="border_header">
             <hr>
@@ -23,25 +32,19 @@
 </header>
 
 <div id="welcome_text">
-    <h1>But Wise guys, who are you ??!!</h1>
+    <h1>A couple of good advices</h1>
 </div>
-<ul>
-    <li><a href="/reducer_dit_madspild">Gode råd</a></li>
-    <li><a href="/advice2">Good to know too</a></li>
-    <li><a href="/numbers">Relevants numbers</a></li>
-    <li><a href="/home">Home</a></li>
-
-    <li style="float:right"><a class="active" href="/omos">About Us</a></li>
-</ul>
 
 <section id="splash_forside"></section>
 
-<h1 class="overskrift">Some facts about us:</h1>
+<h1 class="overskrift">Here is what we recommend:</h1>
 
 <p>
     What is Lorem Ipsum?
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </p>
+<h1>Reducer_dit_madspild</h1>
+<h4>Her som forklaring om tabellen:</h4>
 <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
     totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
     dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
@@ -55,21 +58,40 @@
 </p>
 <br>
 <br>
+<table style="width:50%" align="Center">
+    <tr>
+        <th>Vare</th>
+        <th>Mængde/antal</th>
+        <th>Udløbsdato</th>
+    </tr>
+    <tr>
+        <td>Kartofler</td>
+        <td>2 kg</td>
+        <td>2-Jan-2021</td>
+    </tr>
+    <tr>
+        <td>Nødder</td>
+        <td>1,5 kg</td>
+        <td>2-Oct-2020</td>
+    </tr>
+
+</table>
+
 <section id="forside_grid">
 
     <div class="box_wrapper">
 
         <div class="pic_container">
-            <a href="/reducer_dit_madspild">
-                <img class="pic4_img" src="/images/tips.png" alt="advice">
-                <div class="pic_text">Gode råd</div>
+            <a href="/advices">
+                <img class="pic1_img" src="/images/tips.png" alt="advice">
+                <div class="pic_text">Good advices</div>
             </a>
         </div>
 
         <div class="pic_container">
-            <a href="/advice2">
+            <a href="/advices2">
                 <img class="pic2_img" src="/images/moretips.jpg" alt="advice2">
-                <div class="pic_text">Flere råd</div>
+                <div class="pic_text">More advices...</div>
             </a>
         </div>
     </div>
@@ -78,14 +100,14 @@
         <div class="pic_container">
             <a href="/numbers">
                 <img class="pic3_img" src="/images/stats.jpg" alt="stats">
-                <div class="pic_text">Nogle tal</div>
+                <div class="pic_text">Relevant numbers</div>
             </a>
         </div>
 
         <div class="pic_container">
-            <a href="/home">
-                <img class="pic1_img" src="/images/home.png" alt="home">
-                <div class="pic_text">Home</div>
+            <a href="/omos">
+                <img class="pic4_img" src="/images/about-us.png" alt="about us">
+                <div class="pic_text">Contact</div>
             </a>
         </div>
     </div>
@@ -105,6 +127,12 @@
             <a href="mailto:wizeguys@mob.dk">wizeguys@mob.dk</a>
         </div>
 
+        <div class="kontakt">
+            <p><b>Social media</b></p>
+            <a href="https://www.facebook.com/MadspildDK" aria-label="facebook" class="fa fa-facebook"></a>
+
+
+        </div>
     </div>
 
 
