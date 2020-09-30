@@ -4,9 +4,6 @@ import com.example.demo.service.DataStorage;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-
-import java.time.LocalDate;
 
 @Controller
 public class MyController {
@@ -18,8 +15,8 @@ public class MyController {
 
     @GetMapping("/advices")
     public String advices() {
-         return ("advices");
-        }
+        return ("advices");
+    }
 
     @GetMapping("/home")
     public String home() {
@@ -35,24 +32,28 @@ public class MyController {
     public String reducer(Model model) {
 
         DataStorage dataObj = new DataStorage();
-        model.addAttribute("mad",dataObj.tabelData());
+        model.addAttribute("mad", dataObj.tabelData());
 
         return ("reducer_dit_madspild");
     }
-/*
-    @PostMapping("/reducer_dit_madspild")
-    public String vedKnapTryk(Model model)
-    {
-        return("reducer_dit_madspild1");
-    }
-*/
+
+    /*
+        @PostMapping("/reducer_dit_madspild")
+        public String vedKnapTryk(Model model)
+        {
+            return("reducer_dit_madspild1");
+        }
+    */
     @GetMapping("/goderåd")
     public String goderaad() {
-        return ("goderåd");
+        return ("goderaad");
     }
 
-
+    @GetMapping("/hvadkandugøre")
+    public String hvadkandugøre() {
+        return ("hvadkandugøre");
     }
+}
 
 
 
