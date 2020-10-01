@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     font-family: "Lucida Console", Courier, monospace;
@@ -34,12 +35,12 @@ h4 {
 
 
 #splash_forside {
-    background-image: url("images/legumes.jpg");
+    background-image: url("images/madkurv.jpg");
     width: 100%;
     height: 70vh;
     margin: 0;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
 }
 
 .topnav {
@@ -54,17 +55,13 @@ h4 {
 }
 
 .topnav a:first-child {
-    background-image: url(/ourlogo/cutewise.png);
-    background-size: cover;
-    width: 16vw;
-    height: 12vw;
+    background-image: url(/ourlogo/wiselogo.jpg);
+    background-size: contain;
+    width: 150px;
+    height: 150px;
     margin: 1vw;
 }
 
-.topnav a:first-child:hover {
-    opacity: 0.7;
-
-}
 
 .topnav a {
     float: left;
@@ -126,35 +123,6 @@ h4 {
     padding: 20px;
     text-align: center;
 }
-footer {
-    margin-top: 8vw;
-    width: 100%;
-    background-color: #87efe6;
-    color: white;
-
-}
-
-#footer_info {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 0;
-}
-
-footer a {
-    color: white;
-    font-size: 14px;
-}
-.kontakt {
-    flex-basis: 100px;
-    margin: 1.5vw;
-}
-
-.fa:hover {
-    opacity: 0.6;
-}
-
     table {
         font-family: arial, sans-serif;
         border-collapse: collapse;
@@ -196,3 +164,31 @@ footer a {
     .active {
         background-color: #4caf50;
     }
+footer {
+    margin-top: 8vw;
+    width: 100%;
+    background-color: #87efe6;
+    color: white;
+
+}
+
+#footer_info {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    font-size: 14px;
+}
+.kontakt {
+    flex-basis: 100px;
+    margin: 1.5vw;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
