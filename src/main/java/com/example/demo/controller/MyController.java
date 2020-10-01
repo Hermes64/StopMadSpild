@@ -13,19 +13,29 @@ public class MyController {
         return ("/index");
     }
 
-    @GetMapping("/advices")
-    public String advices() {
-        return ("advices");
-    }
-
     @GetMapping("/home")
     public String home() {
         return ("home");
     }
 
-    @GetMapping("/advice2")
-    public String advice2() {
-        return ("advice2");
+    @GetMapping("/goderaad")
+    public String goderaad() {
+        return ("goderaad");
+    }
+
+    @GetMapping("/numbers")
+    public String stats() {
+        return ("numbers");
+    }
+
+    @GetMapping("/omos")
+    public String omos() {
+        return ("omos");
+    }
+
+    @GetMapping("/hvadkandugøre")
+    public String hvadkandugøre() {
+        return ("hvadkandugøre");
     }
 
     @GetMapping("/reducer_dit_madspild")
@@ -44,17 +54,9 @@ public class MyController {
             return("reducer_dit_madspild1");
         }
     */
-    @GetMapping("/goderåd")
-    public String goderaad() {
-        return ("goderaad");
-    }
 
-    @GetMapping("/hvadkandugøre")
-    public String hvadkandugøre() {
-        return ("hvadkandugøre");
-    }
+
 }
-
 
 
 
