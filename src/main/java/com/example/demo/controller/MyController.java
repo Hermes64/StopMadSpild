@@ -61,7 +61,10 @@ public class MyController {
 
         return "reducer_dit_madspild";
     }
-
+    @GetMapping("/tabeltestskalslettes")
+    public String tabeltestskaltestes() {
+        return ("tabeltestskalslettes");
+    }
 
 
 }
