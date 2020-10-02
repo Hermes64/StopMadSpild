@@ -126,13 +126,21 @@ h3 {
     width: 15vw;
     height: 15vw;
 }
-/* reducer dit madspild tabel */
-    table {
+/* tabel indstillinger */
+    table, th, td {
         font-family: arial, sans-serif;
+        border: 1px solid darkslategrey;
         border-collapse: collapse;
-        width: 100%;
-        background-color: #ffcd00;
+        width: auto;
+        background-color: #a1f5dc;
     }
+
+th, td {
+    padding: 10px;
+}
+th {
+    text-align: left;
+}
 
 /*Footer section*/
 footer {
