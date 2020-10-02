@@ -7,11 +7,11 @@ public class Mad
 {
     private String madNavn;
     private double amount;
-    private LocalDate expireDate;
+    private String expireDate;
 
     public Mad(){}
 
-    public Mad(String madNavn, double amount, LocalDate expireDate) {
+    public Mad(String madNavn, double amount, String expireDate) {
         this.madNavn = madNavn;
         this.amount = amount;
         this.expireDate = expireDate;
@@ -33,11 +33,11 @@ public class Mad
         this.amount = amount;
     }
 
-    public LocalDate getExpireDate() {
+    public String getExpireDate() {
         return expireDate;
     }
 
-    public void setExpireDate(LocalDate expireDate) {
+    public void setExpireDate(String expireDate) {
         this.expireDate = expireDate;
     }
 

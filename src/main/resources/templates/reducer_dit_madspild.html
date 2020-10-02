@@ -11,29 +11,28 @@
 <body>
 <header id="myTopnav">
     <div>
-
         <div class="topnav">
             <a href="/"></a>
-
-
         </div>
-
     </div>
-
 </header>
-<div id="navbar">
 
+<div id="navbar">
     <a href="/goderaad">Gode Råd</a>
     <a href="/numbers" >Relevante tal</a>
     <a href="/home">Startside</a>
     <li style="float:right"><a class="active" href="/omos">Om os</a></li>
 </div>
+
 <h1>Reducer_dit_madspild</h1>
+
 <h4>Her som forklaring om tabellen:</h4>
+
 <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
     totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+    nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+</p>
 
-    nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
 <table style="width:50%" align="Center">
     <thead>
         <tr>
@@ -44,31 +43,30 @@
     </thead>
 
     <tbody>
-    <tr th:each="mad : ${mad}">
-        <td><span th:text="${mad.madNavn}"> Title </span></td>
-        <td><span th:text="${mad.amount}"> Amount </span></td>
-        <td><span th:text="${mad.expireDate}"> Expiredate </span></td>
-    </tr>
-
+        <tr th:each="mad : ${mad1}">
+            <td><span th:text="${mad.madNavn}"> Title </span></td>
+            <td><span th:text="${mad.amount}"> Amount </span></td>
+            <td><span th:text="${mad.expireDate}"> Expiredate </span></td>
+        </tr>
     </tbody>
-
-
-
-
 </table>
 
-<-- tabel er tilføjet VIRKER IKKE-->
-<table>
-<br>
-    <form method="post">
-        <input type="text" name="addVare"/>
-        <input type="text" name="addAmount"/>
-        <input type="text" name="addExpireDate"/>
-        <input type="submit" value="Tilføj ny vare">
 
+<div align="center">
+    <h1>User Registration</h1>
+    <form action="#" th:action="@{/reducer_dit_madspild}" method="post" th:object="${mad}">
+        <label>Mad navn:</label>
+        <input type="text" th:field="*{madNavn}" /><br/>
+
+        <label>Mængde:</label>
+        <input type="text" th:field="*{amount}" /><br/>
+
+        <label>Udløbsdato:</label>
+        <input type="text" th:field="*{expireDate}" /><br/>
+
+        <button type="submit">Register</button>
     </form>
-
-</table>
+</div>
 <section id="forside_grid">
 
 </section>

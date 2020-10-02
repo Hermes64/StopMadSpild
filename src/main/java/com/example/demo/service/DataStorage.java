@@ -10,19 +10,19 @@ public class DataStorage
 {
     private static ArrayList<Mad> tabelListData = new ArrayList<Mad>();
 
-    public static ArrayList<Mad> tabelData() //String madNavn, double amount, LocalDate expiredate)
+    public static ArrayList<Mad> tabelData(String madNavn, double amount, String expiredate)
+    {
+        tabelListData.add(new Mad(madNavn, amount, expiredate));
+
+        return tabelListData;
+    }
+
+
+    public static ArrayList<Mad> tabelData()
     {
 
-        tabelListData.add(new Mad("Kødd",2, LocalDate.of(2020,11,5)));
-        tabelListData.add(new Mad("Pære",3, LocalDate.of(2020,10,3)));
-        tabelListData.add(new Mad("Banan",3, LocalDate.of(2000,11,3)));
-        //tabelListData.add(new Mad(madNavn, amount, expiredate));
-
-        //System.out.println("Data: "+tabelListData);
         return tabelListData;
     }
 
-    public ArrayList<Mad> getTabelListData() {
-        return tabelListData;
-    }
+
 }
