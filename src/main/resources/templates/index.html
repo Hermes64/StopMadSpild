@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Hvad kan du gøre?</title>
+    <title>Om madspild</title>
     <link rel="stylesheet" href="style.css">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
@@ -13,7 +13,7 @@
 
         <div class="topnav">
             <a href="/"></a>
-
+<h3 align="center">ceci est un test</h3>
 
         </div>
 
@@ -24,13 +24,15 @@
 <div id="welcome_text">
     <h1>What you always wanted to know about food waste!</h1>
 </div>
-<ul>
-    <li><a href="/goderaad">Gode råd</a></li>
-    <li><a href="/reducer_dit_madspild">Reducer dit madspild</a></li>
-    <li><a href="/numbers">Nogle relevante tal</a></li>
 
+<div id="navbar">
+
+    <a href="/goderaad">Gode råd</a>
+    <a href="/reducer_dit_madspild">Reducer dit madspild</a>
+    <a href="/numbers" >Relevante tal</a>
     <li style="float:right"><a class="active" href="/omos">Om os</a></li>
-</ul>
+</div>
+
 
 <section id="splash_forside"></section>
 
@@ -52,42 +54,9 @@
 
 <section id="forside_grid">
 
-    <div class="box_wrapper">
-
-            <div class="pic_container">
-                <a href="/reducer_dit_madspild">
-                    <img class="pic1_img" src="/images/tips.png" alt="reducer dit mad spil">
-                    <div class="pic_text">Reducer dit medspild</div>
-                </a>
-            </div>
 
 
-        <div class="pic_container">
-            <a href="/goderaad">
-                <img class="pic2_img" src="/images/moretips.jpg" alt="gode råd">
-                <div class="pic_text">Gode råd</div>
-            </a>
-        </div>
-    </div>
-
-    <div class="box_wrapper">
-        <div class="pic_container">
-            <a href="/numbers">
-                <img class="pic3_img" src="/images/stats.jpg" alt="stats">
-                <div class="pic_text">Nogle relevante tal</div>
-            </a>
-        </div>
-
-        <div class="pic_container">
-            <a href="/omos">
-                <img class="pic4_img" src="/images/about-us.png" alt="Om os">
-                <div class="pic_text">Kontakt os</div>
-            </a>
-        </div>
-    </div>
 </section>
-
-
 
 <footer>
     <div id="footer_info">
@@ -104,5 +73,19 @@
     </div>
 
 </footer>
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 </body>
 </html>

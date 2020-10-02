@@ -21,13 +21,13 @@
     </div>
 
 </header>
-<ul>
-    <li><a href="/home">Hjem</a></li>
-    <li><a href="/goderaad">Gode råd</a></li>
-    <li><a href="/numbers">Nogle relevante tal</a></li>
+<div id="navbar">
 
-    <li style="float:right"><a class="active" href="/omos">About Us</a></li>
-</ul>
+    <a href="/goderaad">Gode Råd</a>
+    <a href="/numbers" >Relevante tal</a>
+    <a href="/home">Startside</a>
+    <li style="float:right"><a class="active" href="/omos">Om os</a></li>
+</div>
 <h1>Reducer_dit_madspild</h1>
 <h4>Her som forklaring om tabellen:</h4>
 <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
@@ -71,39 +71,8 @@
 </table>
 <section id="forside_grid">
 
-    <div class="box_wrapper">
-
-        <div class="pic_container">
-            <a href="/home">
-                <img class="pic1_img" src="/images/home.png" alt="hjem">
-                <div class="pic_text">Hjem</div>
-            </a>
-        </div>
-
-        <div class="pic_container">
-            <a href="/goderaad">
-                <img class="pic2_img" src="/images/moretips.jpg" alt="goderåd">
-                <div class="pic_text">Gode råd</div>
-            </a>
-        </div>
-    </div>
-
-    <div class="box_wrapper">
-        <div class="pic_container">
-            <a href="/numbers">
-                <img class="pic3_img" src="/images/stats.jpg" alt="stats">
-                <div class="pic_text">Nogle relevante tal</div>
-            </a>
-        </div>
-
-        <div class="pic_container">
-            <a href="/omos">
-                <img class="pic4_img" src="/images/about-us.png" alt="Om os">
-                <div class="pic_text">Kontakt os</div>
-            </a>
-        </div>
-    </div>
 </section>
+
 <footer>
     <div id="footer_info">
         <div class="kontakt">
@@ -120,5 +89,20 @@
 
 
 </footer>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 </body>
 </html>

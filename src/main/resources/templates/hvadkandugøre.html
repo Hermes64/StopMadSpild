@@ -20,13 +20,14 @@
     </div>
 
 </header>
-<ul>
-    <li><a href="/reducer_dit_madspild">Reducer dit madspild</a></li>
-    <li><a href="/goderaad">Gode råd</a></li>
-    <li><a href="/numbers">Some relevants numbers</a></li>
+<div id="navbar">
 
+    <a href="/goderaad">Gode Råd</a>
+    <a href="/reducer_dit_madspild">Reducer dit madspild</a>
+    <a href="/numbers" >Relevante tal</a>
+    <a href="/home">Startside</a>
     <li style="float:right"><a class="active" href="/omos">Om os</a></li>
-</ul>
+</div>
 <div class="container content" style=" margin: 35px;">
     <div class="wrapper">
 
@@ -115,5 +116,20 @@
     </div>
 
 </footer>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 </body>
 </html>
