@@ -24,7 +24,15 @@ h1 {
 h2 {
     color: #674949;
     font-size: 24px;
+    text-align: left;
+    padding-left: 600px;
 
+}
+
+h3 {
+    color: yellowgreen;
+    text-align: center;
+    font-size: 24px;
 }
 
 h4 {
@@ -32,11 +40,13 @@ h4 {
     text-align: center;
     font-size: 1.5rem;
 }
-h3 {
-    color: yellowgreen;
-    text-align: center;
-    font-size: 24px;
+
+p {
+    color: #070707;
+    padding-left: 100px;
+    padding-right: 100px;
 }
+
 
 .topnav {
     overflow: hidden;
@@ -128,6 +138,7 @@ h3 {
 }
 /* tabel indstillinger */
     table, th, td {
+
         font-family: arial, sans-serif;
         border: 1px solid darkslategrey;
         border-collapse: collapse;
@@ -157,6 +168,7 @@ footer {
     justify-content: center;
     position: relative;
     bottom: 0;
+
 }
 
 footer a {
@@ -166,5 +178,6 @@ footer a {
 .kontakt {
     flex-basis: 100px;
     margin: 1.5vw;
+    color: white;
 }
 
