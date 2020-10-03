@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -15,7 +14,6 @@
 
         <div class="topnav">
             <a href="/"></a>
-            <h3 align="center">ceci est un test</h3>
 
         </div>
 
@@ -27,7 +25,8 @@
 
     <a href="/goderaad">Gode råd</a>
     <a href="/reducer_dit_madspild">Reducer dit madspild</a>
-    <a href="/home" >Start side</a>
+    <a href="/numbers">nogle lyse punkter</a>
+    <a href="/home" >Startside</a>
     <li style="float:right"><a class="active" href="/omos">Om os</a></li>
 </div>
 <div>
@@ -45,10 +44,9 @@
     <figure>
         <img
                 src="https://mst.dk/media/148214/1920madspildCOLOURBOX30827833.jpg?width=678"
-                alt="køkken" style="width: 50%;"
+                alt="køkken"
 
         />
-
         <figcaption>
             Foto: Colourbox
         </figcaption>
@@ -112,8 +110,8 @@
     </p>
 </div>
 
-        <div id="ContentPlaceHolderDefault_mainGrid_ctl01">
-            <div>
+
+<div>
                 <h2>
                     Fakta: Danskernes madspild
                 </h2>
@@ -124,7 +122,7 @@
                     madspildet fra husholdningerne ved at sammenligne tal fra
                     2011 med tal fra 2017:
                 </p>
-                <table border="0">
+                <table>
                     <tr>
                         <th>Husholdningernes madspild</th>
                         <th>2011</th>
@@ -171,7 +169,7 @@
                     størst incitament til reduktion af madspild, hvis det kan
                     spare dem penge på husholdningsbudgettet.
                 </p>
-                <table border="0">
+                <table>
                     <tr>
                         <th>Hvad synes om at:</th>
                         <th>Nej</th>
@@ -194,10 +192,10 @@
                     </tr>
 
                 </table>
-                <p>
+                <p align="center">
                     <strong>Incitament til at reducere madspild:</strong>
                 </p>
-                <table border="0">
+                <table>
                     <tr>
                         <th>Hvad skal der til:</th>
                         <th>Ikke vigtigt</th>
@@ -243,12 +241,10 @@
                         <td>59 %</td>
                     </tr>
                 </table>
-                <p>
+                <p align="center">
                     <em>Kilde: Aarhus Universitet</em>
                 </p>
             </div>
-        </div>
-    </div>
 
 </header>
 
@@ -266,15 +262,30 @@
     <div id="footer_info">
         <div class="kontakt">
             <p><b>Telephone</b></p>
-            <a href="tel:+45 70 12 34 56 ">+45 70 12 34 56</a>
+            <a href="tel:+4570123456">+45 70123456</a>
         </div>
 
         <div class="kontakt">
             <p><b>Email</b></p>
-            <a href="mailto:wizeguys@mob.dk">wizeguys@mob.dk</a>
+            <a href="mailto:wiseguys@mob.dk">wiseguys@mob.dk</a>
         </div>
     </div>
 
 </footer>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 </body>
 </html>

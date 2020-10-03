@@ -1,4 +1,5 @@
 
+
 * {
     box-sizing: border-box;
     font-family: "Lucida Console", Courier, monospace;
@@ -8,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("/images/bluevariant.png");
+    background-image: url("/images/greystrong.png");
     background-attachment: fixed;
     background-size: cover;
 
@@ -45,6 +46,11 @@ p {
     color: #070707;
     padding-left: 100px;
     padding-right: 100px;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
+    line-height: 1.6;
 }
 
 
@@ -65,10 +71,12 @@ p {
     width: 150px;
     height: 150px;
     margin: 1vw;
+
+
 }
 
 .topnav a {
-    float: left;
+
     display: block;
     color: black;
     text-align: center;
@@ -76,8 +84,8 @@ p {
     text-decoration: none;
     font-size: 17px;
     z-index: 3;
-    }
-
+}
+/*topnavbar bjælket*/
 #navbar {
     overflow: hidden;
     background-color: #333;
@@ -92,10 +100,10 @@ p {
     text-decoration: none;
     font-size: 17px;
 }
-
+/*top navbar hoover*/
 #navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: black;
+    color: whitesmoke;
 }
 
 #navbar a.active {
@@ -137,15 +145,23 @@ p {
     height: 15vw;
 }
 /* tabel indstillinger */
-    table, th, td {
+table, th, td {
 
-        font-family: arial, sans-serif;
-        border: 1px solid darkslategrey;
-        border-collapse: collapse;
-        width: auto;
-        background-color: #a1f5dc;
+    font-family: "Lucida Console", Courier, monospace;
+    border: 1px solid darkslategrey;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin-right: 300px;
+    background-color: #d2cfcf;
+    margin-left: 250px;
+    line-height: 1.6;
     }
-
+/*
+table.center {
+    margin-left:300px;
+    margin-right:300px;
+}*/
 th, td {
     padding: 10px;
 }
@@ -153,14 +169,16 @@ th {
     text-align: left;
 }
 
-/*Footer section*/
+/*---------Footer----------*/
+
 footer {
     margin-top: 8vw;
     width: 100%;
-    background-color: #5252e5;
-    color: white;
+    background-color: red;
+
+
 }
-/* footer tekst info */
+
 #footer_info {
     flex-wrap: wrap;
     display: flex;
@@ -168,13 +186,29 @@ footer {
     position: relative;
     bottom: 0;
 }
+
 footer a {
-    color: white;
+    color: greenyellow;
     font-size: 14px;
 }
+
 .kontakt {
     flex-basis: 100px;
     margin: 1.5vw;
+}
+.videoWrapper {
+    position: relative;
+    padding-bottom: calc(var(--aspect-ratio, .5625) * 50%);
+    margin-left: calc(var(--aspect-ratio, .5625) * 50%);
+    margin-right: calc(var(--aspect-ratio, .5625) * 50%);
 
 }
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 

@@ -49,8 +49,7 @@ public class MyController {
     }
 
     @GetMapping("/reducer_dit_madspild")
-    public String reducer(Model model)
-    {
+    public String reducer(Model model) {
         Mad mad = new Mad();
         model.addAttribute("mad", mad);
 
@@ -58,13 +57,12 @@ public class MyController {
     }
 
     @PostMapping("/reducer_dit_madspild")
-    public String vedKnapTryk(Model model, @ModelAttribute("mad") Mad mad)
-    {
+    public String vedKnapTryk(Model model, @ModelAttribute("mad") Mad mad) {
         //Fylder arrayList med data fra textfields
         DataStorage.tabelData(mad.getMadNavn(), mad.getAmount(), objRestDays.resterendeDage(mad.getExpireDate()));
 
         //skal fange dato String
-        System.out.println("Dette er dato string: "+mad.getExpireDate());
+        System.out.println("Dette er dato string: " + mad.getExpireDate());
 
         //konvertere til LocalDate
         //LocalDate expireDate = LocalDate.parse(mad.getExpireDate());
@@ -79,21 +77,12 @@ public class MyController {
         //skal indsætte resterende dage i tabel
 
 
-
         //Indsætter data i tabel fra ArrayList
         model.addAttribute("mad1", DataStorage.tabelData());
 
 
-
         return "reducer_dit_madspild";
     }
-    @GetMapping("/tabeltestskalslettes")
-    public String tabeltestskaltestes() {
-        return ("tabeltestskalslettes");
-    }
-
-
 }
-
 
 
