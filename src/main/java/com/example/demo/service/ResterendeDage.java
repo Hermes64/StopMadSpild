@@ -12,6 +12,7 @@ public class ResterendeDage {
      */
     public String resterendeDage(String expireDate_)
     {
+        //rfrfrfrf
         //konvertere til LocalDate
         LocalDate expireDate = LocalDate.parse(expireDate_);
         System.out.println("Dette er dato LocalDate: " + expireDate);
