@@ -42,14 +42,190 @@ h4 {
     font-size: 1.5rem;
 }
 
++
 p {
     color: #070707;
     padding-left: 100px;
     padding-right: 100px;
-    margin-top: 75px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    line-height: 1.6;
+}
+
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+}
+
+.border_header {
+    border: 1px solid #5f5f5f;
+    width: 90%;
+    margin: 0 auto;
+}
+/* logo section */
+.topnav a:first-child {
+    background-image: url(/ourlogo/wiselogo.jpg);
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin: 1vw;
+
+
+}
+
+.topnav a {
+
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+/*topnavbar bjælket*/
+#navbar {
+    overflow: hidden;
+    background-color: #303030;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/*top navbar hoover*/
+#navbar a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+#navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/* Forsidens background section */
+#splash_forside {
+    background-image: url("images/madkurv.jpg");
+    width: 100%;
+    height: 70vh;
+    margin: 0;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+#forside_grid {
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+#forside_grid img {
+    width: 15vw;
+    height: 15vw;
+}
+/* tabel indstillinger */
+.table, th, td {
+
+    font-family: "Lucida Console", Courier, monospace;
+    border: 1px solid darkslategrey;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin-right: 300px;
+    background-color: #d2cfcf;
+    margin-left: 250px;
+    line-height: 1.6;
+;
+}
+/*
+table.center {
+    margin-left:300px;
+    margin-right:300px;
+}*/
+th, td {
+    padding: 10px;
+}
+th {
+    text-align: left;
+}
+
+/*---------Footer----------*/
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/greystrong.png");
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin: 5vw;
+    color: #4c4c4c;
+}
+
+h2 {
+    color: #fffdfd;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 600px;
+
+}
+
+h3 {
+    color: yellowgreen;
+    text-align: center;
+    font-size: 24px;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
++
+p {
+    color: #070707;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
     line-height: 1.6;
 }
 
@@ -88,7 +264,7 @@ p {
 /*topnavbar bjælket*/
 #navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #303030;
 }
 
 #navbar a {
@@ -145,18 +321,18 @@ p {
     height: 15vw;
 }
 /* tabel indstillinger */
-table, th, td {
+.table, th, td {
 
     font-family: "Lucida Console", Courier, monospace;
     border: 1px solid darkslategrey;
     border-collapse: collapse;
-    table-layout: fixed;
+    table-layout: auto;
     width: 100%;
-    margin-right: 300px;
     background-color: #d2cfcf;
     margin-left: 250px;
     line-height: 1.6;
-    }
+;
+}
 /*
 table.center {
     margin-left:300px;
@@ -171,31 +347,56 @@ th {
 
 /*---------Footer----------*/
 
-footer {
-    margin-top: 8vw;
-    width: 100%;
-    background-color: red;
-
-
-}
-
 #footer_info {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    position: relative;
+    position: fixed;
+    left: 0;
     bottom: 0;
+    width: 100%;
+    background-color: #303030;
+    color: white;
+
 }
 
-footer a {
-    color: greenyellow;
-    font-size: 14px;
+/* footer tekst info */
+
+#footer_info a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+#footer_info a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+.content {
+    padding: 16px;
+}
+a:link {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-.kontakt {
-    flex-basis: 100px;
-    margin: 1.5vw;
+a:hover {
+    background-color: black;
+    color: whitesmoke;
 }
+
+
+
+
+
+
+
+
 .videoWrapper {
     position: relative;
     padding-bottom: calc(var(--aspect-ratio, .5625) * 50%);
@@ -212,3 +413,21 @@ footer a {
 }
 
 
+
+
+
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: calc(var(--aspect-ratio, .5625) * 50%);
+    margin-left: calc(var(--aspect-ratio, .5625) * 50%);
+    margin-right: calc(var(--aspect-ratio, .5625) * 50%);
+
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
