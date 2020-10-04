@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.example.demo</OriginalElement>
+  <nodes>
+    <node x="142.3923611111111" y="0.0">com.example.demo.model.Mad</node>
+    <node x="234.0" y="416.0">com.example.demo.controller.MyController</node>
+    <node x="625.0" y="0.0">com.example.demo.DemoApplicationTests</node>
+    <node x="0.0" y="708.0">com.example.demo.DemoApplication</node>
+    <node x="363.0" y="283.0">com.example.demo.service.ResterendeDage</node>
+    <node x="-1.6504237288135641" y="257.6016949152543">com.example.demo.service.DataStorage</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.demo.controller.MyController" target="com.example.demo.model.Mad">
+      <point x="0.0" y="-123.5" />
+      <point x="352.5" y="221.0" />
+      <point x="330.30902777777777" y="221.0" />
+      <point x="85.41666666666669" y="100.5" />
+    </edge>
+    <edge source="com.example.demo.controller.MyController" target="com.example.demo.service.ResterendeDage">
+      <point x="94.80000000000001" y="-123.5" />
+      <point x="447.3" y="391.0" />
+      <point x="525.75" y="391.0" />
+      <point x="54.25" y="25.5" />
+    </edge>
+    <edge source="com.example.demo.controller.MyController" target="com.example.demo.service.DataStorage">
+      <point x="-94.80000000000007" y="-123.5" />
+      <point x="257.69999999999993" y="391.0" />
+      <point x="165.5" y="391.0" />
+      <point x="0.0" y="57.5" />
+    </edge>
+    <edge source="com.example.demo.service.DataStorage" target="com.example.demo.model.Mad">
+      <point x="-124.125" y="-57.5" />
+      <point x="41.375" y="221.0" />
+      <point x="159.4756944444444" y="221.0" />
+      <point x="-85.41666666666669" y="100.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6059050064184852" x="406.5" y="379.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
