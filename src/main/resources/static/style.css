@@ -41,7 +41,15 @@ h4 {
     text-align: center;
     font-size: 1.5rem;
 }
+img {
+    display: block;
 
+    margin-left: auto;
+
+    margin-right: auto;
+
+    width: 40%;
+}
 
 p {
     color: #070707;
@@ -147,13 +155,14 @@ p {
 }
 /* tabel indstillinger */
 .table, th, td  {
-alignment: center;
+alignment:center;
     font-family: "Lucida Console", Courier, monospace;
     border: 1px solid darkslategrey;
     border-collapse: collapse;
     width: 50%;
     background-color: #d2cfcf;
     line-height: 1.6;
+    margin-left: 400px;
 ;
 }
 /*

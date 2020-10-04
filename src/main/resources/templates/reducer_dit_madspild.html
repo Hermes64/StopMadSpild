@@ -7,6 +7,13 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
+<style>
+    .box_wrapper {
+        flex-wrap: wrap;
+        display: flex;
+        margin: 0 auto;
+    }
+</style>
 <body>
 
 <header id="myTopnav">
@@ -14,7 +21,7 @@
 
         <div class="topnav">
             <a href="/"></a>
-
+            <h1>Reducer dit madspild </h1>
         </div>
 
     </div>
@@ -30,14 +37,34 @@
     <li style="float:right"><a class="active" href="/omos">Om os</a></li>
 </div>
 
-<h1>Reducer_dit_madspild</h1>
+
 
 <h4>Her som forklaring om tabellen:</h4>
 
-<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-    nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+<p>Madspild er et stort problem i Danmark. Vi er Danmarks største bevægelse mod madspild. Vi bragte fokus på madspild i Danmark og vi bragte Danmarks kamp mod madspild på verdenskortet. Stop Spild Af Mad er en non-profit, frivillig forbrugerbevægelse, som kæmper mod madspild og siden 2008 har medvirket til at bringe massivt fokus på madspild i Danmark samt opnået en lang række resultater i både Danmark og i samarbejde med EU, Norden og FN. Danmark genererer et årligt madspild på mange hundrede tusind tons - det kæmper vi for at stoppe. Vi bakkes op af mange tusinde danskere samt en lang række toneangivende toppolitikere og anerkendte madpersonligheder, som ikke vil finde sig i madspild. Vil du med i kampen mod madspild?
+
+
+
+
+
+    Stop Spild Af Mad har fået en ny hjemmeside. Vi beholder dog vores gamle hjemmeside, som skal fungere som en vidensbank af informationer om madspild - samt oplyse om vores arbejde i kampen mod madspild siden 2008.
 </p>
+
+<div align="center">
+    <h1>User Registration</h1>
+    <form action="#" th:action="@{/reducer_dit_madspild}" method="post" th:object="${mad}">
+        <label>Mad navn:</label>
+        <input type="text" th:field="*{madNavn}" /><br/>
+
+        <label>Mængde:</label>
+        <input type="text" th:field="*{amount}" /><br/>
+
+        <label>Udløbsdato:</label>
+        <input type="text" th:field="*{expireDate}" /><br/>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
 
 <table style="width:50%" align="Center">
     <thead>
@@ -57,22 +84,15 @@
     </tbody>
 </table>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<div align="center">
-    <h1>User Registration</h1>
-    <form action="#" th:action="@{/reducer_dit_madspild}" method="post" th:object="${mad}">
-        <label>Mad navn:</label>
-        <input type="text" th:field="*{madNavn}" /><br/>
 
-        <label>Mængde:</label>
-        <input type="text" th:field="*{amount}" /><br/>
 
-        <label>Udløbsdato:</label>
-        <input type="text" th:field="*{expireDate}" /><br/>
-
-        <button type="submit">Register</button>
-    </form>
-</div>
 <section id="forside_grid">
 
 </section>
