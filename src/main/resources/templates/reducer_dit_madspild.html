@@ -54,15 +54,17 @@
     <h1>User Registration</h1>
     <form action="#" th:action="@{/reducer_dit_madspild}" method="post" th:object="${mad}">
         <label>Mad navn:</label>
-        <input type="text" th:field="*{madNavn}" /><br/>
+        <input type="text" th:field="*{madNavn}" />
 
         <label>Mængde:</label>
-        <input type="text" th:field="*{amount}" /><br/>
+        <input type="text" th:field="*{amount}" />
 
         <label>Udløbsdato:</label>
-        <input type="text" th:field="*{expireDate}" /><br/>
+        <input type="text" th:field="*{expireDate}" />
 
         <button type="submit">Register</button>
+        <br>
+        <br>
     </form>
 </div>
 
